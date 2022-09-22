@@ -6,27 +6,31 @@
     <meta name="description" content=" Agência de Viagens encontra o hotel certo pra você!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
+    <link rel="stylesheet" href="/Agencia-de-viagens/css/estilo.css">
+
     <title>Agencia de Viagens</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="topo limite-largura">
         <div>
-            <img src="assets/imagens/local-logo.png" title="logo da agencia" alt="logo da agencia">
-            <p>Agencia de Viagens</p>
+            <img class="topo-logo" src="assets/imagens/local-logo.png" title="logo da agencia" alt="logo da agencia">
+            <p class="topo-titulo">Agencia de Viagens</p>
         </div>
     </header>
     <main>
-        <section>
-            <div>
-                <div>
-                    <img src="assets/imagens/aviao.png" title="Ícone do aviao" alt="Ícone do aviao">
-                    <h1>Solicite um orçamento</h1>
+        <section class="orcamento-fundo">
+            <div class="orcamento-area limite-largura">
+                <div class="orcamento-cabecalho">
+                    <img class="orcamento-logo" src="assets/imagens/aviao.png" title="Ícone do aviao"
+                        alt="Ícone do aviao">
+                    <h1 class="orcamento-descricao">Solicite um orçamento</h1>
                 </div>
-                <div>
-                    <h2>Informe seus dados</h2>
-                    <form method="post"
+                <div class="orcamento-area-formulario">
+                    <h2 class="orcamento-subtitulo-formulario">Informe seus dados</h2>
+                    <form method="post" class="formulario"
                         action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
                         <label for="nome">Nome</label>
                         <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
@@ -48,7 +52,7 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div class="formulario-campo-duplo">
                             <div>
                                 <label for="origem">Origem</label>
                                 <select name="origem" id="origem">
@@ -77,7 +81,7 @@
 
                         <label>Quarto com cama infantil?</label>
 
-                        <div>
+                        <div class="radio">
                             <div>
                                 <input id="infantil-sim" type="radio" name="infantil" value="s">
                                 <label for="infantil-sim">Sim</label>
@@ -90,7 +94,7 @@
 
                         <label>Preferências de Hospedagem</label>
 
-                        <div>
+                        <div class="radio">
                             <div>
                                 <input id="piscina" type="checkbox" name="preferencias[]" value="piscina">
                                 <label for="piscina">Piscina</label>
@@ -117,17 +121,17 @@
         </section>
 
 
-        <section>
-            <h2>Ofertas</h2>
-            <h3>Com até <span>50%</span>de desconto.</h3>
-            <div>
-                <div>
+        <section class="ofertas-area limite-largura">
+            <h2 class="ofertas-titulo">Ofertas</h2>
+            <h3 class="ofertas-descricao">Com até <span>50%</span>de desconto.</h3>
+            <div class="ofertas-imagens">
+                <figure class="oferta-imagem-destaque">
                     <img src="/assets/imagens/rio.jpg" alt="Rio de Janeiro - Cidade Maravilhosa"
                         title="Rio de Janeir - Brasil">
                     <span>Rio de Janeiro</span>
-                </div>
+                </figure>
 
-                <div>
+                <div class="oferta-quatro-imagens">
 
                     <div>
                         <img src="/assets/imagens/manaus.jpg" alt="Manaus" title="Manaus">
@@ -153,12 +157,12 @@
             </div>
         </section>
 
-        <section>
-            <h2>Explore a Natureza</h2>
-            <h3>Viaje conosco e veja o melhor que a natureza tem a oferecer.</h3>
+        <section class="natureza-area limite-largura">
+            <h2 class="natureza-titulo">Explore a Natureza</h2>
+            <h3 class="natureza-descricao">Viaje conosco e veja o melhor que a natureza tem a oferecer.</h3>
 
-            <div>
-                <div>
+            <div class="natureza-imagem">
+                <figure>
                     <img src="/assets/imagens/lencol.jpg" alt="Lençois Maranheses - Brasil"
                         title="Lençois Maranheses - Brasil">
 
@@ -166,23 +170,23 @@
                         <h3>Lençois Maranhenses, Brasil</h3>
                         <p>Ida e volta a partir de R$79</p>
                     </div>
-                </div>
+                </figure>
 
 
-                <div>
+                <figure class="natureza-imagem">
                     <img src="/assets/imagens/goias.jpg" alt="Cachoeira Santa bárbara - GO"
                         title="Cachoeira Santa bárbara - GO">
                     <div>
                         <h3>Cachoeira Santa Bárbara, Brasil</h3>
                         <p>Ida e volta por R$139</p>
                     </div>
-                </div>
+                </figure>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div>
+    <footer class="rodape-limite-largura">
+        <div class="rodape-conteudo">
             <div>
                 <h2>Contato</h2>
                 <div>
@@ -201,7 +205,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="rodape-conteudo">
                 <h2>Nossas Redes Sociais</h2>
                 <div>
                     <img src="/assets/imagens/fb.png" alt="Ícone Facebook" title="ícone">
@@ -221,4 +225,5 @@
         </div>
     </footer>
 </body>
+
 </html>
